@@ -1,125 +1,66 @@
-# Vencord-Configurations-by-landn.thrn
+This is my personal Vencord setup, for those that want a great starting point to build on, or skip configuring and simply acquire what I consider to be a proper collection and configuration of Vencord.
 
-Enjoy the best Vencord setups (Modded Discord) with different variations for different purposes
-
-#### [Download Vencord for Discord](https://vencord.dev)
-
-#### [Vencord GitHub](https://github.com/Vendicated/Vencord)
-
-#### [Vencord Discord](https://discord.gg/xymWt9QRbp)
+- I've purposely left out parts that I felt were too opinionated for the common person.  
+- Also includes a short guide for applying local themes.
 
 ---
 
-# HOW TO IMPORT SETTINGS:
-
-- Once you have Vencord installed  
-- Go to Discord settings, find Backup & Restore in the Vencord section of settings  
-- Import a Vencord profile setting of your choosing  
+- **[Download Vencord](https://vencord.dev)** 
+- **[Vencord GitHub](https://github.com/Vendicated/Vencord)** 
+- **[Vencord Discord](https://discord.gg/xymWt9QRbp)**
 
 ---
 
-# HOW TO IMPORT THEMES:
+### Apply My Vencord Settings
 
-- Go to Discord Settings, find Themes in the Vencord section of settings  
+1. Open Discord Settings > Vencord > Backup & Restore
+2. Import the Vencord settings export of your choosing from this repo *(if you already have a Vencord setup of your own, export it first so it isn't lost)*
+3. Restart/Reload Discord
 
-- Press Open Theme Folder  
-
-- Use one of the themes provided in this download, or find more with the link in the Themes folder  
-
-- Drag all the themes you want into the Themes folder  
-
-- Back on Vencord themes setings select Load Missing Themes  
-
-- They should now show up in Themes for you to toggle on/off  
-
-**If the themes aren't applying then try turning your Discord Nitro theme to dark default**  
 
 ---
 
-# HOW TO TWEAK THE IMAGE OF DISCORDIA THEME:
+### Apply Local Themes
 
-- Visit [Imgur](https://imgur.com/upload)  
+1. Download your desired theme's `.css` file
+2. Open: Discord Settings > Vencord > Themes
+3. Select 'Open Theme Folder'
+4. Copy or move the theme's `.css` file into the folder
+5. Back in Vencord's Themes settings, select 'Load Missing Themes'
+6. Toggle on whichever themes you want
+   
+- If a theme isn't applying properly, try switching your Discord Nitro theme to the default dark theme
 
-- Drag an image in  
+### Customize Theme Backgrounds
 
-- Copy the IMAGE ADDRESS  
+#### Change Image Background
 
-- If the link shows " blob " in the beginning it's wrong,  
-  so wait a second for it to fully upload, it should look like `https://i.imgur.com/`...etc...  
+- Most commonly themes will offer the ability to add/change background image
 
-- Open the Discordia theme file with Notepad  
+1. Open the theme's `.css` file and find its background image setting, word search for likely parameter names like:  `--app-bg`, `--bg`,  `--background-image`, `--bg-img`, ...etc...
+2. Use your own custom image by replacing the image URL with your own.
+   - Suggest getting your image URL via **[Imgur](https://imgur.com/upload)**. 
+    Make sure your URL doesn't contain 'blob', if it does then you copied a invalid URL.
 
-- Press Crtl + F to bring up the word search  
+#### Transparent Background
 
-- Word search for `background image`  
+- Some themes may support transparent backgrounds, such as **[Translucence](https://betterdiscord.app/theme/Translucence)**
 
-- Simply replace the Imgur link already entered with yours  
+1. You must have 'Enable Window Transparency' enabled, find it in: Discord Settings > Vencord >  Enable Window Transparency
+2. The way you can make a theme's background transparent in it's  `.css` file can differ depending on the theme, but most likely you should replace the image URL used in it's image setting with `transparent;` or `none`. The theme may offer the ability via something like `transparent: true`. 
 
-- You can also adjust the bluriness right beside this section  
+- You may likely need an external tool to apply blur to the transparent Discord window, I suggest **[MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone)** or the Windhawk mod 'Translucent Windows' by **[Undisputed00x](https://github.com/Undisputed00x)**
+  - If you're on Win10, MicaForEveryone & Windhawk Translucent Windows aren't too compatible on it. 
+     - I actually have a fork of MicaForEveryone that is optimized toward better Win10 compatibility, just make sure you read **[the repo](https://github.com/landnthrn/MicaForEveryone-win10-fork)**.  
+     - Translucent Windows also has **[a more Win10 optimized version](https://github.com/Gameknight963/translucent-windows-for-win10)** by  **[Gameknight963](https://github.com/Gameknight963)**
+- If you lose the ability to resize the Discord window when Vencord's 'Enable Window Transparency' feature is enabled, you can try a Windhawk mod 'Discord Transparency Resize Fix' by **[Gameknight963](https://github.com/Gameknight963)**
 
-- Save file  
-
-- Go to Discord Settings > Themes in the Vencord section  
-
-- Select Load Missing Themes to refresh  
-
-**Try out your customized Discordia theme!!**  
-
----
-
-# HOW TO CUSTOMIZE THE DISCORD ICON FOR DISCORDIA:
-
-- Visit [Imgur](https://imgur.com/upload) 
-
-- Drag an image in (square resolution recomended, like 512px by 512px)  
-
-- Copy the IMAGE ADDRESS  
-
-- If the link shows " blob " in the beginning it's wrong,  
-  so wait a second for it to fully upload, it should look like `https://i.imgur.com/`...etc...   
-
-- Open one of the TWEAKED Discordia theme files with Notepad  
-
-- Press Crtl + F to bring up the word search  
-
-- Word search for `--custom-logo:` url  
-
-- Replace the link that's there with your imgur link  
-
-- Save file  
-
-- Go to Discord Settings > Themes in the Vencord section  
-
-- Select Load Missing Themes to refresh  
-
-**Try out your customized Discord icon!!**  
-
----
-
-#### I tweaked Discordia theme to support GIF's and even transparent GIF's for Discord Icon  
-I recommend getting your GIF link using github  
-
-- Create a public github repo  
-
-- Upload the GIF into it  
-
-- Click the GIF file in the repo so your able to view it  
-
-- Right click on the GIF preview and Open in New Tab  
-
-- Copy the page link it should look like `https://raw.githubusercontent.com/YOURGITHUBNAME/YOURREPONAME/refs/heads/main/NAMEOFYOURGIF.gif`  
-
-- Insert that link into the `--custom-logo:` url section of one of the TWEAKED Discordia theme files  
-
-**Enjoy your GIF Discord Icon!!**  
-
----
-
-## THEME CREDITS:
-
+#### Find Themes:
+- **[Better Discord Themes](https://betterdiscord.app/themes)**
+ - Basically all Better Discord themes work on Vencord
+#### Themes I Suggest Checking out:
 - **[Discordia](https://github.com/ungiglio/DiscordDiscordia)**
 - **[Translucence](https://betterdiscord.app/theme/Translucence)**
-- **[Dark Purple](https://betterdiscord.app/theme/Dark%2B)**
 - **[Frosted Glass](https://betterdiscord.app/theme/Frosted%20Glass)**
 - **[Wizard UI](https://betterdiscord.app/theme/WizardUI)**
 - **[Fallout4 Terminal](https://github.com/PepeBigotes/Fallout4TerminalColorTheme)**
@@ -130,13 +71,103 @@ I recommend getting your GIF link using github
 
 ---
 
-## Found this useful?<img src="https://media.tenor.com/23NitOvEEkMAAAAj/optical-illusion-rotating-head.gif" width="30"><br>
+### Credits
 
-[![Follow Me <3](https://img.shields.io/badge/Follow%20Me%20%3C3-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/landnthrn)   
-[![Find More of my Creations on GitHub](https://img.shields.io/badge/Find%20More%20of%20my%20Creations%20on%20GitHub-311A82?style=for-the-badge&logo=github&logoColor=white)](https://github.com/landnthrn?tab=repositories)  
-[![Gists: landnthrn](https://img.shields.io/badge/Gists-311A82?style=for-the-badge&logo=github&logoColor=white)](https://gist.github.com/landnthrn)  
-[![Discord: landn.thrn](https://img.shields.io/badge/Discord-311A82?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/831735011588964392)  
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-311A82?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/landn.thrn/extras)  
-[![PayPal](https://img.shields.io/badge/PayPal-311A82?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C)
+#### Vencord plugins in my setting exports
+*GitHub source repo's couldn't be found for plenty of the plugins*
 
-![](https://github-view-counter-1-0-0.vercel.app/api?username=landnthrn-Goat-Vencord-Setup&label=false&bgColor=20164C&color=6a5acd&iconColor=6a5acd)
+- AccountPanelServerProfile, by **[relitrix-archive](https://github.com/relitrix-archive)**
+- **[AlwaysAnimate](https://github.com/jackmthws/Vencord/blob/main/src/plugins/alwaysAnimate/index.ts)**, by **[jackmthws](https://github.com/jackmthws)**
+- **[AlwaysExpandRoles](https://github.com/chloecinders/Vencord/blob/main/src/plugins/alwaysExpandRoles/index.ts)**, by **[chloecinders](https://github.com/chloecinders)**
+- **[AlwaysTrust](https://github.com/zt64/Vencord/blob/main/src/plugins/alwaysTrust/index.ts)**, by **[zt64](https://github.com/zt64)**
+- BetterRoleContext, by **[Vendicated](https://github.com/Vendicated)**
+- BetterRoleDot, by **[Vendicated](https://github.com/Vendicated)**
+- **[BetterSessions](https://github.com/aamiaa/Vencord/blob/main/src/plugins/betterSessions/index.tsx)**, by **[aamiaa](https://github.com/aamiaa)**
+- BetterSettings, by **[Kyuuhachi](https://github.com/Kyuuhachi)**
+- BiggerStreamPreview, by **[philhk](https://github.com/philhk)**
+- CallTimer, by **[Vendicated](https://github.com/Vendicated)**
+- ClearURLs, by **[adryd325](https://github.com/adryd325)**
+- CopyEmojiMarkdown, by **[vishnyanetchereshnya](https://github.com/vishnyanetchereshnya)**
+- CopyFileContents, by **[Obsidianninja11](https://github.com/Obsidianninja11)**
+- CopyUserURLs, by **[castdrian](https://github.com/castdrian)**
+- CrashHandler, by **[Nuckyz](https://github.com/Nuckyz)**
+- CustomIdle, by **[waresnew](https://github.com/waresnew)**
+- DisableCallIdle, by **[Nuckyz](https://github.com/Nuckyz)**
+- DontRoundMyTimestamps, by **[KontrollFreek](https://github.com/KontrollFreek)**
+- EmoteCloner, by **[Vendicated](https://github.com/Vendicated)**
+- FakeNitro, by **[ArjixWasTaken](https://github.com/ArjixWasTaken)**
+- FakeProfileThemes, by **[rosalinadev](https://github.com/rosalinadev)**
+- FavoriteEmojiFirst, by **[Syncxv](https://github.com/Syncxv)**
+- FavoriteGifSearch, by **[Syncxv](https://github.com/Syncxv)**
+- FixImagesQuality, by **[Nuckyz](https://github.com/Nuckyz)**
+- FixSpotifyEmbeds, by **[Vendicated](https://github.com/Vendicated)**
+- FixYoutubeEmbeds, by **[velzie](https://github.com/velzie)**
+- FriendsSince, by **[sillyElv](https://github.com/sillyElv)**
+- FullSearchContext, by **[Vendicated](https://github.com/Vendicated)**
+- **[FullUserInChatbox](https://github.com/sadan4/Vencord/blob/main/src/plugins/fullUserInChatbox/index.tsx)**, by **[sadan4](https://github.com/sadan4)**
+- GameActivityToggle, by **[Nuckyz](https://github.com/Nuckyz)**
+- GifPaste, by **[Vendicated](https://github.com/Vendicated)**
+- GreetStickerPicker, by **[Vendicated](https://github.com/Vendicated)**
+- IgnoreActivities, by **[Nuckyz](https://github.com/Nuckyz)**
+- ImplicitRelationships, by **[dolfies](https://github.com/dolfies)**
+- MemberCount, by **[Vendicated](https://github.com/Vendicated)**
+- MentionAvatars, by **[Vendicated](https://github.com/Vendicated)**
+- MessageClickActions, by **[Vendicated](https://github.com/Vendicated)**
+- MessageLogger, by **[rushiiMachine](https://github.com/rushiiMachine)**
+- MutualGroupDMs, by **[aamiaa](https://github.com/aamiaa)**
+- NewGuildSettings, by **[cunnyarc](https://github.com/cunnyarc)**
+- NoF1, by **[Cynosphere](https://github.com/Cynosphere)**
+- NSFWGateBypass, by **[Commandtechno](https://github.com/Commandtechno)**
+- OpenInApp, by **[Vendicated](https://github.com/Vendicated)**
+- PermissionsViewer, by **[Nuckyz](https://github.com/Nuckyz)**
+- PinDMs, by **[Vendicated](https://github.com/Vendicated)**
+- **[PreviewMessage](https://github.com/Syncxv/Vencord/blob/main/src/plugins/previewMessage/index.tsx)**, by **[Syncxv](https://github.com/Syncxv)**
+- QuickMention, by **[kem0x](https://github.com/kem0x)**
+- QuickReply, by **[fawni](https://github.com/fawni)**
+- ReadAllNotificationsButton, by **[kem0x](https://github.com/kem0x)**
+- RelationshipNotifier, by **[nickisnoobatcode](https://github.com/nickisnoobatcode)**
+- ReplyTimestamp, by **[Kyuuhachi](https://github.com/Kyuuhachi)**
+- ServerInfo, by **[Vendicated](https://github.com/Vendicated)**
+- ShowAllMessageButtons, by **[Nuckyz](https://github.com/Nuckyz)**
+- ShowConnections, by **[TheKodeToad](https://github.com/TheKodeToad)**
+- ShowHiddenThings, by **[dolfies](https://github.com/dolfies)**
+- SilentMessageToggle, by **[Nuckyz](https://github.com/Nuckyz)**
+- SilentTyping, by **[Vendicated](https://github.com/Vendicated)**
+- StickerPaste, by **[ImBonana](https://github.com/ImBonana)**
+- SuperReactionTweaks, by **[jackmthws](https://github.com/jackmthws)**
+- ThemeAttributes, by **[Vendicated](https://github.com/Vendicated)**
+- Translate, by **[Vendicated](https://github.com/Vendicated)**
+- TypingIndicator, by **[Nuckyz](https://github.com/Nuckyz)**
+- **[TypingTweaks](https://github.com/zt64/Vencord/blob/main/src/plugins/typingTweaks/index.tsx)**, by **[zt64](https://github.com/zt64)**
+- UserMessagesPronouns, by **[TymanWasTaken](https://github.com/TymanWasTaken)**
+- UserVoiceShow, by **[Nuckyz](https://github.com/Nuckyz)**
+- USRBG, by **[AutumnVN](https://github.com/AutumnVN)**
+- ValidUser, by **[Vendicated](https://github.com/Vendicated)**
+- VoiceChatDoubleClick, by **[Vendicated](https://github.com/Vendicated)**
+- VencordToolbox, by **[Vendicated](https://github.com/Vendicated)**
+- ViewIcons, by **[Vendicated](https://github.com/Vendicated)**
+- ViewRaw, by **[12944qwerty](https://github.com/12944qwerty)**
+- VoiceDownload, by **[puv](https://github.com/puv)**
+- VoiceMessages, by **[Vendicated](https://github.com/Vendicated)**
+- VolumeBooster, by **[Nuckyz](https://github.com/Nuckyz)**
+- YoutubeAdblock, by **[Vendicated](https://github.com/Vendicated)**
+- ExpressionCloner, by **[Vendicated](https://github.com/Vendicated)**
+- CopyStickerLinks, by **[byeoon](https://github.com/byeoon)**
+- ImageFilename, by **[fawni](https://github.com/fawni)**
+- CustomCommands, by **[Vendicated](https://github.com/Vendicated)**
+- CharacterCounter, by **[thororen1234](https://github.com/thororen1234)**
+- PlainFolderIcon
+
+
+---
+
+## Found this useful?![[optical-illusion-rotating-head.gif|400]]<br>
+
+[![[Follow Me 3-000000.svg|Follow Me <3|400]]](https://github.com/landnthrn)   
+[![[Find More of my Creations on GitHub-311A82.svg|Find More of my Creations on GitHub|400]]](https://github.com/landnthrn?tab=repositories)  
+[![[Gists-311A82.svg|Gists: landnthrn|400]]](https://gist.github.com/landnthrn)  
+[![[Discord-311A82.svg|Discord: landn.thrn|400]]](https://discord.com/users/831735011588964392)  
+[![[Buy Me a Coffee-311A82.svg|Buy Me a Coffee|400]]](https://buymeacoffee.com/landn.thrn/extras)  
+[![[PayPal-311A82.svg|PayPal|400]]](https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C)
+
+![](https://github-view-counter-1-0-0.vercel.app/api?username=landnthrn-my-vencord-setup&label=false&bgColor=20164C&color=6a5acd&iconColor=6a5acd)
